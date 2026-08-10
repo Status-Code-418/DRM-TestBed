@@ -1,0 +1,53 @@
+# Python cache / virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+.venv/
+env/
+.env
+
+# Local runtime logs
+*.log
+drm_server.log
+client_agent.log
+gunicorn_access.log
+gunicorn_error.log
+gunicorn_stdout.log
+server/log/
+
+# Runtime data / forensic artifacts
+artifacts/
+**/artifacts/
+drm_events.json
+*.evtx
+*.status.txt
+artifact_*.zip
+
+# Local configuration with server IPs, passwords, keys, or registry settings
+client_config.json
+server_config.json
+**/server_config.json
+
+# PDF documents and generated DRM/decrypted outputs
+*.pdf
+*.drmpdf
+*_Encryption.pdf
+*_Decrypted.pdf
+
+# Backup archives and packaged outputs
+*.zip
+*.7z
+*.rar
+build/
+dist/
+*.spec
+*.exe
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

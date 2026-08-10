@@ -1,0 +1,28 @@
+sudo apt update
+sudo apt install python3 python3-pip python3-flask python3-requests gunicorn
+
+cd "server"
+
+server_config.json에서 flask_port, artifact_socket_port, users 값을 확인 또는 수정
+
+nano server_config.json
+
+계정 정보는 DB 대신 server_config.json의 users 항목에서 관리
+실제 운영 환경에서는 DB, 비밀번호 해시, 접근통제, 감사로그 기반 구조로 확장 권장
+
+gunicorn --bind 0.0.0.0:503 app:app &
+
+pkill gunicorn
+
+ps -ef | grep gunicorn
+
+
+[ 최신 실행 명령어 ]
+
+nohup gunicorn --bind 0.0.0.0:503 --workers 1 --threads 4 --timeout 120 --access-logfile gunicorn_access.log --error-logfile gunicorn_error.log app:app > gunicorn_stdout.log 2>&1 &
+
+ss -lntp | grep 503
+ss -lntp | grep 504
+
+sudo ufw allow 503/tcp
+sudo ufw allow 504/tcp
