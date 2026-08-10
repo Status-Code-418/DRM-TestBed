@@ -1,0 +1,29 @@
+{
+  "events_file": "drm_events.json",
+  "artifacts_dir": "artifacts",
+  "artifact_socket_host": "0.0.0.0",
+  "artifact_socket_port": 504,
+  "max_artifact_bytes": 104857600,
+  "flask_host": "0.0.0.0",
+  "flask_port": 503,
+  "users": {
+    "admin": {
+      "pw": "admin1234",
+      "key": 171,
+      "role": "admin",
+      "dept": "보안운영팀"
+    },
+    "user1": {
+      "pw": "pass1234",
+      "key": 207,
+      "role": "user",
+      "dept": "영업1팀"
+    },
+    "gemini": {
+      "pw": "abc123",
+      "key": 119,
+      "role": "user",
+      "dept": "기술연구소"
+    }
+  }
+}

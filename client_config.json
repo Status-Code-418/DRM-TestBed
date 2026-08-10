@@ -1,0 +1,15 @@
+{
+  "auth_server_url": "http://DRM_Server:503",
+  "lock_port": 65432,
+  "agent_command_port": 65433,
+  "drm_tracking_interval_seconds": 30,
+  "drm_artifact_limit": 20,
+  "drm_scan_file_limit": 200,
+  "artifact_socket_port": 504,
+  "client_log_file": "client_agent.log",
+  "local_artifacts_dir": "artifacts",
+  "drm_view_icon_file": "DRM_Agent_Viewer.ico",
+  "drm_pdf_prog_id": "DRMAgentPDF",
+  "drm_reg_backup_key": "Software\\DRMAgent\\PdfAssociationBackup",
+  "drm_capabilities_key": "Software\\DRMAgent\\Capabilities"
+}
