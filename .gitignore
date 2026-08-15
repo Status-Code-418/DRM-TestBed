@@ -1,4 +1,4 @@
-# Python cache / virtual environments
+# 파이썬 캐시 / 가상 환경
 __pycache__/
 *.py[cod]
 *.pyo
@@ -8,7 +8,7 @@ venv/
 env/
 .env
 
-# Local runtime logs
+# 로컬 실행 로그
 *.log
 drm_server.log
 client_agent.log
@@ -17,7 +17,7 @@ gunicorn_error.log
 gunicorn_stdout.log
 server/log/
 
-# Runtime data / forensic artifacts
+# 실행 데이터 / 포렌식 산출물
 artifacts/
 **/artifacts/
 drm_events.json
@@ -25,13 +25,13 @@ drm_events.json
 *.status.txt
 artifact_*.zip
 
-# PDF documents and generated DRM/decrypted outputs
+# PDF 문서 및 생성된 DRM/복호화 결과물
 *.pdf
 *.drmpdf
 *_Encryption.pdf
 *_Decrypted.pdf
 
-# Backup archives and packaged outputs
+# 백업 압축 파일 및 패키징 결과물
 *.zip
 *.7z
 *.rar
@@ -40,7 +40,7 @@ dist/
 *.spec
 *.exe
 
-# OS / editor noise
+# 운영체제 / 편집기 잡파일
 Thumbs.db
 Desktop.ini
 .DS_Store
